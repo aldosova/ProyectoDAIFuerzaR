@@ -71,12 +71,18 @@
     <Content Include="CreacionCuenta.aspx" />
     <Content Include="CreacionCuentaOrg.aspx" />
     <Content Include="CreacionCuentaVol.aspx" />
+    <Content Include="EventosAdmin.aspx" />
     <Content Include="HistorialVol.aspx" />
+    <Content Include="InicioAdmin.aspx" />
     <Content Include="InicioOrganizacion.aspx" />
     <Content Include="InicioVoluntario.aspx" />
+    <Content Include="loginAdmin.aspx" />
     <Content Include="loginOrgVol.aspx" />
     <Content Include="ManualDeAyuda.aspx" />
+    <Content Include="OrganizacionesAdmin.aspx" />
     <Content Include="PerfilVol.aspx" />
+    <Content Include="TareasAdmin.aspx" />
+    <Content Include="VolAdmin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -109,12 +115,26 @@
     <Compile Include="CreacionCuentaVol.aspx.designer.cs">
       <DependentUpon>CreacionCuentaVol.aspx</DependentUpon>
     </Compile>
+    <Compile Include="EventosAdmin.aspx.cs">
+      <DependentUpon>EventosAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventosAdmin.aspx.designer.cs">
+      <DependentUpon>EventosAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HistorialVol.aspx.cs">
       <DependentUpon>HistorialVol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="HistorialVol.aspx.designer.cs">
       <DependentUpon>HistorialVol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InicioAdmin.aspx.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioAdmin.aspx.designer.cs">
+      <DependentUpon>InicioAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="InicioOrganizacion.aspx.cs">
       <DependentUpon>InicioOrganizacion.aspx</DependentUpon>
@@ -130,6 +150,13 @@
     <Compile Include="InicioVoluntario.aspx.designer.cs">
       <DependentUpon>InicioVoluntario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="loginAdmin.aspx.cs">
+      <DependentUpon>loginAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginAdmin.aspx.designer.cs">
+      <DependentUpon>loginAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="loginOrgVol.aspx.cs">
       <DependentUpon>loginOrgVol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -144,6 +171,13 @@
     <Compile Include="ManualDeAyuda.aspx.designer.cs">
       <DependentUpon>ManualDeAyuda.aspx</DependentUpon>
     </Compile>
+    <Compile Include="OrganizacionesAdmin.aspx.cs">
+      <DependentUpon>OrganizacionesAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrganizacionesAdmin.aspx.designer.cs">
+      <DependentUpon>OrganizacionesAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PerfilVol.aspx.cs">
       <DependentUpon>PerfilVol.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -152,6 +186,20 @@
       <DependentUpon>PerfilVol.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TareasAdmin.aspx.cs">
+      <DependentUpon>TareasAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TareasAdmin.aspx.designer.cs">
+      <DependentUpon>TareasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VolAdmin.aspx.cs">
+      <DependentUpon>VolAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VolAdmin.aspx.designer.cs">
+      <DependentUpon>VolAdmin.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
