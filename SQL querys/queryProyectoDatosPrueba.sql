@@ -1,3 +1,4 @@
+use FuerzaR
 insert into Estado values(1, 'CDMX')
 insert into Ciudad values(1, 'CDMX',1)
 
