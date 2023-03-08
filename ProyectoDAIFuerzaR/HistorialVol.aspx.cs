@@ -16,6 +16,10 @@ namespace ProyectoDAIFuerzaR
                 Session.Abandon();
                 Response.Redirect("loginOrgVol.aspx");
             }
+            if (GridView1.Rows.Count == 0)
+            {
+                Label1.Text = "Tu historial está vacío";
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
