@@ -16,13 +16,8 @@
             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
             <br />
             Ciudad:
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-            <br />
-            Estado:
-            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-            <br />
-            Página web:
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="DropDownList1" runat="server">
+            </asp:DropDownList>
             <br />
             Teléfono:
             <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
@@ -30,16 +25,10 @@
             Correo:
             <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
             <br />
-            Verificar correo:
-            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
-            <br />
             Contraseña:
             <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
             <br />
-            Verificar contraseña:
-            <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="Registrar" />
+            <asp:Button ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" />
             <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <br />

@@ -18,5 +18,23 @@ namespace ProyectoDAIFuerzaR
         {
             Response.Redirect("loginOrgVol.aspx");
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            String query1 = "select max(ClaveVoluntario) from Voluntario";
+            //ClaveVoluntario --> llave
+            String query2 = "select ClaveVoluntario from Voluntario where ClaveVoluntario = ?";
+            //ClaveVoluntario --> llave
+            //Correo --> TextBox10
+            //Contrasena --> TextBox12
+            //Nombre --> TextBox1
+            //Edad --> TextBox4
+            //Sexo --> DropDownList3
+            //Telefono --> TextBox9
+            //CURP --> TextBox10
+            //ClaveCiudad --> DropDownList1
+            String query3 = "insert into Voluntario values(?,?,?,?,?,?,?,?,?)";
+            int llave = 1;
+        }
     }
 }

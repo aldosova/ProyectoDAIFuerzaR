@@ -20,6 +20,14 @@ namespace ProyectoDAIFuerzaR
             {
                 Label1.Text = "Tu historial está vacío";
             }
+            else
+            {
+                //ClaveVoluntario --> Session[]
+                String query = "select Tarea.Descripcion, Tarea.FechaInicio, Tarea.FechaFin from Tarea inner join " +
+                    "EventoTareaVoluntario on EventoTareaVoluntario.ClaveTarea = Tarea.ClaveTarea inner join Voluntario " +
+                    "on Voluntario.ClaveVoluntario = EventoTareaVoluntario.ClaveVoluntario where Tarea.FechaFin is not null and " +
+                    "Voluntario.ClaveVoluntario = ?";
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
