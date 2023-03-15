@@ -67,7 +67,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AyudaVol.aspx" />
     <Content Include="CreacionCuenta.aspx" />
     <Content Include="CreacionCuentaOrg.aspx" />
     <Content Include="CreacionCuentaVol.aspx" />
@@ -78,7 +77,6 @@
     <Content Include="InicioVoluntario.aspx" />
     <Content Include="loginAdmin.aspx" />
     <Content Include="loginOrgVol.aspx" />
-    <Content Include="ManualDeAyuda.aspx" />
     <Content Include="OrganizacionesAdmin.aspx" />
     <Content Include="PerfilVol.aspx" />
     <Content Include="TareasAdmin.aspx" />
@@ -86,13 +84,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AyudaVol.aspx.cs">
-      <DependentUpon>AyudaVol.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AyudaVol.aspx.designer.cs">
-      <DependentUpon>AyudaVol.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ConexionBD.cs" />
     <Compile Include="CreacionCuenta.aspx.cs">
       <DependentUpon>CreacionCuenta.aspx</DependentUpon>
@@ -163,13 +154,6 @@
     </Compile>
     <Compile Include="loginOrgVol.aspx.designer.cs">
       <DependentUpon>loginOrgVol.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ManualDeAyuda.aspx.cs">
-      <DependentUpon>ManualDeAyuda.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ManualDeAyuda.aspx.designer.cs">
-      <DependentUpon>ManualDeAyuda.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrganizacionesAdmin.aspx.cs">
       <DependentUpon>OrganizacionesAdmin.aspx</DependentUpon>

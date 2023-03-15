@@ -17,6 +17,8 @@ namespace ProyectoDAIFuerzaR
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            //Correo --> TextBox1
+            //Contrasena --> TextBox2
             String queryVol = "select ClaveVoluntario, Nombre from Voluntario where Correo = ? and Contrasena = ? ";
             String queryOrg = "select ClaveOrganizacion, Nombre from Organizacion where Correo = ? and Contrasena = ? ";
             OdbcConnection conexionVol = new ConexionBD().con;

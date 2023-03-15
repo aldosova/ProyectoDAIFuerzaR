@@ -9,29 +9,21 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            Nombre(s):
+            Nombre Completo:
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br />
-            Apellido paterno:
-            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            <br />
-            Apellido materno:
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-            <br />
-            Fecha de Nacimiento:
-            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            Edad : <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
             <br />
             Sexo:
-            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="DropDownList3" runat="server">
+            </asp:DropDownList>
             <br />
             CURP:
             <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
             <br />
             Ciudad de residencia:
-            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
-            <br />
-            Estado de residencia:
-            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+            <asp:DropDownList ID="DropDownList1" runat="server">
+            </asp:DropDownList>
             <br />
             Teléfono:
             <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
@@ -39,16 +31,10 @@
             Correo:
             <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
             <br />
-            Verificar correo:
-            <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
-            <br />
             Contraseña:
             <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
             <br />
-            Verificar contraseña:
-            <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
-            <br />
-            <asp:Button ID="Button1" runat="server" Text="Registrar" />
+            <asp:Button ID="Button1" runat="server" Text="Registrar" OnClick="Button1_Click" />
             <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
             <br />

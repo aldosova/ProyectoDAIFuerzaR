@@ -16,6 +16,10 @@ namespace ProyectoDAIFuerzaR
                 Session.Abandon();
                 Response.Redirect("loginOrgVol.aspx");
             }
+            //ClaveVoluntario --> Session[]
+            String query = "select Voluntario.ClaveVoluntario, Tarea.Descripcion from Tarea inner join EventoTareaVoluntario on " +
+                "EventoTareaVoluntario.ClaveTarea = Tarea.ClaveTarea inner join Voluntario on " +
+                "Voluntario.ClaveVoluntario = EventoTareaVoluntario.ClaveVoluntario where Voluntario.ClaveVoluntario = ?";
         }
 
         protected void Button4_Click(object sender, EventArgs e)
@@ -32,11 +36,6 @@ namespace ProyectoDAIFuerzaR
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("HistorialVol.aspx");
-        }
-
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AyudaVol.aspx");
         }
     }
 }

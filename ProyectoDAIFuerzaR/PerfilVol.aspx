@@ -15,17 +15,11 @@
             <br />
             Clave de voluntario / voluntaria: <asp:Label ID="Label1" runat="server"></asp:Label>
             <br />
-            Nombre(s):
+            Nombre completo:
             <asp:Label ID="Label2" runat="server"></asp:Label>
             <br />
-            Apellido paterno:
-            <asp:Label ID="Label3" runat="server"></asp:Label>
-            <br />
-            Apellido materno:
-            <asp:Label ID="Label4" runat="server"></asp:Label>
-            <br />
-            Fecha de Nacimiento:
-            <asp:Label ID="Label5" runat="server"></asp:Label>
+            Edad:
+            <asp:Label ID="Label13" runat="server"></asp:Label>
             <br />
             Sexo:
             <asp:Label ID="Label6" runat="server"></asp:Label>
@@ -33,7 +27,6 @@
             CURP:
             <asp:Label ID="Label7" runat="server"></asp:Label>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label12" runat="server"></asp:Label>
             <br />
             Ciudad de residencia:
             <asp:Label ID="Label8" runat="server"></asp:Label>
@@ -51,7 +44,7 @@
             <asp:GridView ID="GridView1" runat="server">
             </asp:GridView>
             <br />
-            <asp:Button ID="Button2" runat="server" Text="Editar datos" />
+            <asp:Button ID="Button2" runat="server" Text="Editar datos" OnClick="Button2_Click" />
         </div>
     </form>
 </body>
