@@ -18,9 +18,6 @@
             <asp:DropDownList ID="DropDownList3" runat="server">
             </asp:DropDownList>
             <br />
-            CURP:
-            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
-            <br />
             Ciudad de residencia:
             <asp:DropDownList ID="DropDownList1" runat="server">
             </asp:DropDownList>

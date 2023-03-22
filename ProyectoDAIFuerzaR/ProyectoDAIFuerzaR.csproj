@@ -79,7 +79,9 @@
     <Content Include="loginOrgVol.aspx" />
     <Content Include="OrganizacionesAdmin.aspx" />
     <Content Include="PerfilVol.aspx" />
+    <Content Include="TareaDispVol.aspx" />
     <Content Include="TareasAdmin.aspx" />
+    <Content Include="TareaVol.aspx" />
     <Content Include="VolAdmin.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -170,12 +172,26 @@
       <DependentUpon>PerfilVol.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TareaDispVol.aspx.cs">
+      <DependentUpon>TareaDispVol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TareaDispVol.aspx.designer.cs">
+      <DependentUpon>TareaDispVol.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TareasAdmin.aspx.cs">
       <DependentUpon>TareasAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TareasAdmin.aspx.designer.cs">
       <DependentUpon>TareasAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TareaVol.aspx.cs">
+      <DependentUpon>TareaVol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TareaVol.aspx.designer.cs">
+      <DependentUpon>TareaVol.aspx</DependentUpon>
     </Compile>
     <Compile Include="VolAdmin.aspx.cs">
       <DependentUpon>VolAdmin.aspx</DependentUpon>
