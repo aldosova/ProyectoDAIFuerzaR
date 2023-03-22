@@ -23,11 +23,15 @@ Nombre varchar(30),
 Correo varchar(30),
 Contrasena varchar(30))
 
+create table Sexo
+(ClaveSexo int primary key,
+Nombre varchar(15))
+
 create table Tarea
 (ClaveTarea int primary key,
 Descripcion varchar(100),
-FechaInicio datetime not null,
-FechaFin datetime)
+Domicilio varchar(50),
+ClaveEvento int references Evento)
 
 create table Voluntario
 (ClaveVoluntario int primary key,
@@ -35,9 +39,8 @@ Correo varchar(30),
 Contrasena varchar(30),
 Nombre varchar(30),
 Edad int,
-Sexo varchar(1),
+ClaveSexo int references Sexo,
 Telefono int,
-CURP varchar(18),
 ClaveCiudad int references Ciudad)
 
 create table Organizacion
@@ -58,19 +61,9 @@ ClaveCiudad int references Ciudad,
 ClaveTipo int references Tipo,
 ClaveOrganizacion int references Organizacion)
 
-
-create table HabilidadVoluntario
-(ClaveHabilidad int references Habilidad,
+create table TareaVoluntario
+(ClaveTarea int references Tarea,
 ClaveVoluntario int references Voluntario,
-primary key (ClaveHabilidad,ClaveVoluntario))
-
-create table HabilidadTarea
-(ClaveHabilidad int references Habilidad,
-ClaveTarea int references Tarea,
-primary key (ClaveHabilidad,ClaveTarea))
-
-create table EventoTareaVoluntario
-(ClaveEvento int references Evento,
-ClaveTarea int references Tarea,
-ClaveVoluntario int references Voluntario,
-primary key (ClaveTarea,ClaveVoluntario))
+FechaInicio datetime,
+FechaFin datetime,
+primary key  (ClaveTarea,ClaveVoluntario))
