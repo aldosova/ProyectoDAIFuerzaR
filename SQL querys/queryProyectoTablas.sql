@@ -31,6 +31,8 @@ create table Tarea
 (ClaveTarea int primary key,
 Descripcion varchar(100),
 Domicilio varchar(50),
+FechaInicio datetime,
+FechaFin datetime,
 ClaveEvento int references Evento)
 
 create table Voluntario
@@ -64,6 +66,4 @@ ClaveOrganizacion int references Organizacion)
 create table TareaVoluntario
 (ClaveTarea int references Tarea,
 ClaveVoluntario int references Voluntario,
-FechaInicio datetime,
-FechaFin datetime,
 primary key  (ClaveTarea,ClaveVoluntario))
