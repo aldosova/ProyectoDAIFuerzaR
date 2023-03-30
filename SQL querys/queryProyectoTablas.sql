@@ -67,3 +67,8 @@ create table TareaVoluntario
 (ClaveTarea int references Tarea,
 ClaveVoluntario int references Voluntario,
 primary key  (ClaveTarea,ClaveVoluntario))
+
+insert into Sexo values (1,'Hombre')
+insert into Sexo values (2,'Mujer')
+insert into Sexo values (3,'Otro')
+insert into Administrador values (1, 'Jorge Guzman', 'jorge@gmail.com','pepe')
