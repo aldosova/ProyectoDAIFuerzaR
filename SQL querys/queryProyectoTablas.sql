@@ -4,9 +4,6 @@ create table Tipo
 (ClaveTipo int primary key,
 Nombre varchar(30))
 
-create table Habilidad
-(ClaveHabilidad int primary key,
-Nombre varchar(30))
 
 create table Estado
 (ClaveEstado int primary key,
